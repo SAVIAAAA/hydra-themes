@@ -1562,30 +1562,3 @@ body::after {
 .achievement-notification--platinum .achievement-notification__chip__icon path {
     fill: rgb(255, 255, 255);
 }
-
-/* 2. OS DOIS GIFS (ESQUERDA E DIREITA) NO MESMO ELEMENTO */
-.title-bar::before {
-  content: "";
-  position: absolute;
-  left: 49%;
-  top: -5px;
-  transform: translateX(-47%);
-  
-  /* Largura total cobrindo o texto + espaço para as pontas */
-  width: 385px; 
-  height: 50px;
-
-  /* Aplica a mesma imagem duas vezes */
-  background-image: 
-    url("https://raw.githubusercontent.com/SAVIAAAA/HYDRA-ASSETS/main/GIFS/di8atjh-720a9ea2-e6d9-4898-b9bed8cb20c1f3.gif"),
-    url("https://raw.githubusercont.com/SAVIAAAA/HYDRA-ASSETS/main/GIFS/di8atjh-720a9ea2-e6d9-4898-b9bd-6ed8cb20c1f3.gif");
-
-  /* Posiciona um GIF na esquerda (0%) e outro na direita (100%) da caixa */
-  background-position: left center, right center;
-  background-size: 60px 40px;
-  background-repeat: no-repeat;
-  
-  /* Impede que o elemento bloqueie cliques no que estiver atrás */
-  pointer-events: none; 
-}
-
